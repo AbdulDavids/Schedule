@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.current-class, .ongoing-class {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+.upcoming-class {
+    background-color: #a7d8ff;
+    color: black;
+    font-weight: bold;
+}
+
+.next-classes {
+    background-color: #f2f2f2;
+}
+
+.key-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.key {
+    background-color: #fff;
+    padding: 10px;
+    display: inline-block;
+}
+
+.color-key > div {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+
+.color-key {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.color-key:last-child {
+    margin-right: 0;
+}
+
+
+/* Make it mobile-responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    table {
+        font-size: 14px;
+    }
+    th, td {
+        padding: 8px;
+    }
+}
+
+/* ... Your existing CSS rules ... */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #888888; 
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer a {
+    color: #888888;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.footer a:hover{
+    color: #b0aeae; /* Link color */
+    text-decoration: none;
+    margin-left: 5px;
+}
